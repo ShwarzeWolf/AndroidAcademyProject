@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+//speech name
+
+    <TextView
+        android:id="@+id/speechName"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_marginStart="8dp"
+        android:text="@string/speechName"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_margin="10sp"
+        />
+
+    //speakerName
+    <TextView
+        android:id="@+id/speakerName"
+        android:layout_height="20sp"
+        android:text="@string/speakerName"
+        app:layout_constraintTop_toBottomOf="@id/speechName"/>
+
+
+    //speaker company
+    <TextView
+        android:id="@+id/speakerCompany"
+        android:layout_height="20sp"
+        android:text="@string/speakerCompany"
+        app:layout_constraintTop_toBottomOf="@id/speechName"
+        app:layout_constraintLeft_toRightOf="@id/speakerName"
+        tools:layout_marginHorizontal="10sp"/>
+
+
+    //room
+    <TextView
+        android:id="@+id/audience"
+        android:layout_height="30sp"
+        android:text="@string/audienceROOM1"
+        app:layout_constraintTop_toBottomOf="@id/speakerName"/>/>
+
+
+    //desc
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:text="@string/speechDescription"
+        app:layout_constraintTop_toBottomOf="@id/audience"
+        />
+
+    //button
+
+    <Button
+        android:id="@+id/sendButton"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:text="@string/buttonPress"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
